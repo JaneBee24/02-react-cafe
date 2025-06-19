@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './VoteOptions.module.css';
 import { VoteType } from '../../types/votes';
 
@@ -21,7 +20,7 @@ const VoteOptions = ({ onVote, onReset, canReset }: VoteOptionsProps) => {
         Bad
       </button>
       {canReset && (
-        <button className={${css.button} ${css.reset}} onClick={onReset}>
+        <button className={`${css.button} ${css.reset}`} onClick={onReset}>
           Reset
         </button>
       )}
